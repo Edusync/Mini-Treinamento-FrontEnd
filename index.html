@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReceitAI</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
 </head>
 <body>
     
@@ -16,11 +17,51 @@
                 <h1>Olá, Paulo</h1>
             </div>
             <div>
-                <img src="perfil.png" alt="Foto de perfil do usuário">
+                <img src="/img/perfil.png" alt="Foto de perfil do usuário">
             </div>
         </header>
-        <input type="text" name="ingredientes" id="ingredientes">
+
+        <section class="busca">
+            <input type="text" name="ingredientes" id="ingredientes">
+            <button class="fa fa-search"></button>
+        </section>
+
+        <section class="sabores">
+            <p>Escolha o tipo de sabor que você deseja:</p>
+            <div>
+                <button class="sabor">Doce</button>
+                <button class="sabor">Salgado</button>
+                <button class="sabor">Agridoce</button>
+            </div>
+        </section>
+
+        <section class="refeicoes">
+            <p>Escolha para qual refeição você gostaria:</p>
+
+            <button>
+                <span>Café da manhã</span>
+                <img src="/img/cafe.png" alt="Café da manhã">
+            </button>
+
+            <button>
+                <span>Almoço</span>
+                <img src="/img/almoco.png" alt="Almoço">
+            </button>
+            
+            <button>
+                <span>Jantar</span>
+                <img src="/img/jantar.png" alt="Jantar">
+            </button>           
+
+        </section>
+
+        <button class="gerar_receita">
+            Gerar receita
+        </button>
+
     </main>
 
+
+  <script src="https://kit.fontawesome.com/229b2b4264.js" crossorigin="anonymous"></script>
 </body>
 </html>
