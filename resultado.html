@@ -8,5 +8,59 @@
 </head>
 <body>
     
+    <main>
+        <header>
+            <div>
+                <h2>10 de Out</h2>
+                <h1>Olá, Paulo</h1>
+            </div>
+            <div>
+                <img src="/img/perfil.png" alt="Foto de perfil do usuário">
+            </div>
+        </header>
+
+        <section class="botoes_resultados">
+            <button onclick="RecarregarPagina()">Gerar nova receita</button>
+            <button onclick="Voltar()">Voltar</button>
+        </section>
+
+        <h2>Sugestão de receita:</h2>       
+
+        <section class="escolhas">
+            <div class="refeicoes">
+                <button id="cafe">
+                    <span>Café da manhã</span>
+                    <img src="/img/cafe.png" class="refeicao" alt="Café da manhã">
+                </button>
+    
+                <button id="almoco">
+                    <span>Almoço</span>
+                    <img src="/img/almoco.png" class="refeicao" alt="Almoço">
+                </button>
+                
+                <button id="jantar">
+                    <span>Jantar</span>
+                    <img src="/img/jantar.png" class="refeicao" alt="Jantar">
+                </button>
+            </div>
+
+            <div class="sabores">
+                <button class="sabor" id="doce">Doce</button>
+                <button class="sabor" id="salgado">Salgado</button>
+                <button class="sabor" id="agridoce">Agridoce</button>
+            </div>
+
+        </section>
+
+        
+
+        <section class="resultados">
+            <div id="loadingIcon" style="display: none;"></div>
+        </section>
+
+    </main>
+    
+
+    <script src="resultado.js"></script>
 </body>
 </html>
