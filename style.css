@@ -73,10 +73,16 @@ header img{
     box-shadow: var(--shadow_orange);
 }
 
+.busca input::placeholder{
+    color: white;
+    font-size: 12px;
+}
+
 .busca input:focus-visible{
     border: solid 2px var(--red);
     outline: none;
 }
+
 
 .busca button{
     color: white;
@@ -113,7 +119,9 @@ header img{
     width: 90px;
 
     color: white;
-    background: linear-gradient(to left, var(--red), var(--orange));    
+    border: solid 2px var(--red);
+    background: linear-gradient(to left, var(--red), var(--orange)); 
+    cursor: pointer;   
 }
 
 .refeicoes{
@@ -146,6 +154,7 @@ header img{
 
 .refeicoes img{
     border-radius: 8px;
+    border: solid 2px var(--red);
     box-shadow: var(--shadow_black);
 }
 
@@ -162,4 +171,10 @@ header img{
     box-shadow: var(--shadow_black);
 }
 
+
+
+/* Item Selecionado */
+.selecionado{
+    border: solid 2px var(--black) !important;
+}
 

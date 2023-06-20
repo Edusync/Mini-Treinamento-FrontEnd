@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReceitAI</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
 </head>
 <body>
     
@@ -22,16 +21,15 @@
         </header>
 
         <section class="busca">
-            <input type="text" name="ingredientes" id="ingredientes">
-            <button class="fa fa-search"></button>
+            <input type="text" name="ingredientes" placeholder="Digite quais ingredientes você tem aí..." id="ingredientes">
         </section>
 
         <section class="sabores">
             <p>Escolha o tipo de sabor que você deseja:</p>
             <div>
-                <button class="sabor">Doce</button>
-                <button class="sabor">Salgado</button>
-                <button class="sabor">Agridoce</button>
+                <button class="sabor" onclick="SelecionarSabor(this ,'Doce')">Doce</button>
+                <button class="sabor" onclick="SelecionarSabor(this ,'Salgado')">Salgado</button>
+                <button class="sabor" onclick="SelecionarSabor(this ,'Agridoce')">Agridoce</button>
             </div>
         </section>
 
@@ -40,28 +38,28 @@
 
             <button>
                 <span>Café da manhã</span>
-                <img src="/img/cafe.png" alt="Café da manhã">
+                <img src="/img/cafe.png" class="refeicao" alt="Café da manhã" onclick="SelecionarRefeicao(this, 'Café da Manhã')">
             </button>
 
             <button>
                 <span>Almoço</span>
-                <img src="/img/almoco.png" alt="Almoço">
+                <img src="/img/almoco.png" class="refeicao" alt="Almoço" onclick="SelecionarRefeicao(this, 'Almoço')">
             </button>
             
             <button>
                 <span>Jantar</span>
-                <img src="/img/jantar.png" alt="Jantar">
+                <img src="/img/jantar.png" class="refeicao" alt="Jantar" onclick="SelecionarRefeicao(this, 'Jantar')">
             </button>           
 
         </section>
 
-        <button class="gerar_receita">
+        <button class="gerar_receita" onclick="GerarReceita()">
             Gerar receita
         </button>
 
     </main>
 
 
-  <script src="https://kit.fontawesome.com/229b2b4264.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
